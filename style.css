@@ -1,0 +1,160 @@
+body {
+  width: 100%;
+  background: url("space.jpg");
+  background-size: cover;
+  overflow: hidden;
+
+}
+#spazioI {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  margin: 40px auto;
+  border: 2px solid white;
+  background: url("space.png"); 
+  /*background-color: aqua;*/
+  /* nasconde le cose al di fuori dello spazio di gioco */
+  overflow: hidden;
+}
+
+#naveI {
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  background: url("rocket.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 50%;
+  bottom: 0px;
+}
+
+#puntiI {
+  position: absolute;
+  top: 3000px;
+  /* top: 100px; */
+  margin: 300px;
+  font-size: 8em;
+  color: white;
+  text-shadow: 2px 2px #000;
+
+}
+
+.proiettile {
+  position: absolute;
+  bottom: 70px;
+  left: 51%;
+  width: 20px;
+  height: 20px;
+  background: url("bullet.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nemiciLista {
+  position: absolute; 
+  width: 60px;
+  height: 40px;
+  background: url("alien.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+
+#titolo{
+  color: white;
+  font-size: 100px;
+  border-color: burlywood;
+  font-family: Impact;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  text-shadow: 0 0 10px rgb(235, 110, 110), 0 0 20px red;
+}
+
+#finale{
+  color: rgb(70, 17, 17);
+  font-size: 40px;
+  border-color: burlywood;
+  font-family: Impact;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 20px;
+  text-shadow: 0 0 10px red, 0 0 20px red;
+}
+  
+
+
+  #overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("lose.gif"); 
+    z-index: 99;
+    display: none;
+  }
+
+
+  #bottoneMovimentoI {
+  position: absolute;
+  /* top: 400px; */
+  top: 3000px;
+  right: 200px;
+  font-size: 40px;
+  color: white;
+  background-color: #5f35e9;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+  }
+  #bottoneMovimentoI:hover {
+    background-color: #6b51c1;
+  }
+ 
+
+  #bottoneRicominciaI {
+  position: absolute;
+  top: 80px;
+  right: 10px;
+  /* top: 550px; 
+  right: 200px;*/
+  font-size: 40px;
+  color: white;
+  background-color: #0b0f01;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+  }
+
+  #bottoneRicominciaI:hover {
+    background-color: #565656;
+  }
+
+  
+  #intro-video {
+    width: 100%;
+    height: 100%;
+  }
+
+  #stop-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 40px;
+    color: white;
+    background-color: #050700;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+  }
+  #stop-button:hover {
+    background-color: #09053e;
+  }
+  

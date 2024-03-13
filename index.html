@@ -1,0 +1,32 @@
+  <!DOCTYPE html>
+  <html lang="ita">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Gioco</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js" defer></script>
+    </head>
+    
+
+    <body>
+      <video id="intro-video" src="intro.mp4" autoplay></video>
+      <div id="video-overlay">
+        <button id="stop-button" onclick="stopVideo()">Salta video / successivo</button>
+      </div>
+    
+    <audio id="canzone" src="song.mp3"></audio>
+    <audio id="audio-vittoria" src="victory.mp3"></audio>
+    <audio id="audio-sconfitta" src="lost.mp3"></audio>
+    <p id="titolo">SPACIFIST INVADERS</p>
+  
+    <div id="spazioI">
+      <div id="naveI"></div>
+      <div id="overlay"></div>
+    </div>
+    <div id="puntiI">0</div>
+    <button id="bottoneRicominciaI" onclick="restartGame()">Riavvia</button>
+    <button id="bottoneMovimentoI" onclick="setInterval(MuoviAlieni,70)">Muovi alieni/<br>velocizza</button> 
+    <p id="finale"></p>
+    </body>
+  </html>
